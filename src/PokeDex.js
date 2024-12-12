@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import {v1 as uuid} from "uuid";
-import axios from "axios";
+import React from "react";
 import PokemonSelect from "./PokemonSelect";
 import PokemonCard from "./PokemonCard";
 import "./PokeDex.css";

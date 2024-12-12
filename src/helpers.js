@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+import {v1 as uuid} from "uuid";
 
 /* Select a random element from values array. */
 function choice(values) {

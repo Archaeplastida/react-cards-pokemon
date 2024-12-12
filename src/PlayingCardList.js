@@ -4,6 +4,7 @@ import axios from "axios";
 import PlayingCard from "./PlayingCard";
 import "./PlayingCardList.css";
 import { useAxios } from "./hooks";
+import { formatCard } from "./helpers";
 
 /* Renders a list of playing cards.
  * Can also add a new card at random. */
@@ -13,7 +14,7 @@ function CardTable() {
     <div className="PlayingCardList">
       <h3>Pick a card, any card!</h3>
       <div>
-        <button onClick={addCard}>Add a playing card!</button>
+        <button onClick={addCard(formatCard)}>Add a playing card!</button>
         <button onClick={clearCards}>Clear table</button>
       </div>
       <div className="PlayingCardList-card-area">
